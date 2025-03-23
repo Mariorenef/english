@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="📚 Instituto C&E English: clases de inglés para niños, adolescentes y adultos. Cursos presenciales y virtuales en Buenos Aires.">
+
+    <title>Instituto de Inglés C&E English</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-title">
+                <h1 id="typing-text"></h1>
+            </div>
+            <div class="logo-container">
+                <img src="img/1708107246185.jpeg" alt="Instituto de Inglés" class="logo">
+            </div>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about">Quiénes Somos</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-dark">🌙 Cambiar modo</button>
+    </header>
+
+    <section id="about" class="scroll-section">
+        <h2>Quiénes Somos</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p><strong>C&E English</strong> es un instituto de inglés fundado por <strong>Cami & Eli</strong>, con
+                    la misión de brindar una enseñanza del idioma accesible, dinámica y efectiva para todas las edades.
+                </p>
+                <p>Nuestro objetivo es que los alumnos <strong>desarrollen confianza y fluidez</strong>, aplicando el
+                    inglés en su vida cotidiana, académica y profesional. Nos enfocamos en una metodología
+                    <strong>interactiva y comunicativa</strong>, con actividades prácticas y un ambiente positivo.
+                </p>
+                <p>Contamos con docentes altamente capacitados y herramientas innovadoras para garantizar un aprendizaje
+                    significativo. Ofrecemos cursos para <strong>niños, adolescentes y adultos</strong>, adaptándonos a
+                    cada necesidad.</p>
+                <p>En <strong>C&E English</strong>, aprender inglés es una <strong>experiencia divertida, significativa
+                        y con propósito.</strong> ¡Únete a nuestra comunidad y descubrí un mundo lleno de oportunidades!
+                    🚀📚✨</p>
+            </div>
+            <div class="about-image">
+                <img src="img/imagenestu.jpg" alt="Estudiantes en clase">
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="scroll-section">
+        <h2>Nuestros Cursos</h2>
+        <div class="cursos-container">
+            <div class="curso-card">
+                <h3>Children (Niños - Nivel Inicial)</h3>
+                <p class="info-extra">Aprendizaje lúdico con juegos y canciones para introducir el idioma de forma
+                    natural.</p>
+            </div>
+            <div class="curso-card">
+                <h3>Pre-Teens (8 a 12 años)</h3>
+                <p class="info-extra">Desarrollo de frases, lectura y escritura con material interactivo.</p>
+            </div>
+            <div class="curso-card">
+                <h3>Teens (Básico e Intermedio)</h3>
+                <p class="info-extra">Fortalecimiento de gramática, pronunciación y fluidez.</p>
+            </div>
+            <div class="curso-card">
+                <h3>Adults (Principiantes a Intermedios)</h3>
+                <p class="info-extra">Comunicación cotidiana, laboral y académica.</p>
+            </div>
+            <div class="curso-card">
+                <h3>Upper Intermediate (B2)</h3>
+                <p class="info-extra">Preparación para certificaciones, perfeccionamiento oral y escrito.</p>
+            </div>
+            <div class="curso-card">
+                <h3>Advanced (C1)</h3>
+                <p class="info-extra">Comunicación precisa y fluida en situaciones complejas.</p>
+            </div>
+            <div class="curso-card">
+                <h3>Proficiency (C2)</h3>
+                <p class="info-extra">Dominio completo del idioma, escritura académica y comprensión avanzada.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Botón para abrir el modal -->
+    <button id="open-modal">Más info</button>
+
+    <!-- Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Información del curso</h2>
+            <p>Clases presenciales y virtuales, grupos reducidos, todos los niveles.</p>
+        </div>
+    </div>
+    <section id="testimonios" class="scroll-section">
+        <h2>Testimonios</h2>
+        <div class="carousel">
+            <div class="testimonial active">
+                <p>"Aprendí más inglés en 3 meses acá que en años de escuela. Las clases son súper dinámicas."
+                    <br><strong>- Sofía, 16 años</strong>
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>"Volví a estudiar después de muchos años. Me ayudaron a perder el miedo a hablar en inglés."
+                    <br><strong>- Juan, 42 años</strong>
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>"Mis hijos aman venir a clase, aprenden jugando y se divierten muchísimo." <br><strong>- Mariana,
+                        mamá de dos alumnos</strong></p>
+            </div>
+        </div>
+
+        <!-- Botones opcionales -->
+        <div class="carousel-controls">
+            <button id="prev-testimonial">⟨</button>
+            <button id="next-testimonial">⟩</button>
+        </div>
+    </section>
+    <section id="faq" class="scroll-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h4 class="faq-question">¿Necesito conocimientos previos?</h4>
+            <p class="faq-answer">No, tenemos cursos desde nivel inicial para todas las edades.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-question">¿Las clases son presenciales o virtuales?</h4>
+            <p class="faq-answer">Ofrecemos ambas modalidades para adaptarnos a tus necesidades.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-question">¿Cuánto dura cada curso?</h4>
+            <p class="faq-answer">La duración depende del nivel. Generalmente entre 8 y 12 meses.</p>
+        </div>
+    </section>
+
+    <section id="nivel" class="scroll-section">
+        <h2>¿Qué nivel de inglés tenés?</h2>
+        <form id="nivel-form">
+            <!-- Pregunta 1 -->
+            <p>1. ¿Cómo dirías "Yo estoy estudiando inglés"?</p>
+            <label><input type="radio" name="q1" value="a"> I study English</label><br>
+            <label><input type="radio" name="q1" value="b"> I am studying English</label><br>
+            <label><input type="radio" name="q1" value="c"> I am study English</label><br><br>
+
+            <!-- Pregunta 2 -->
+            <p>2. ¿Qué significa "She has been here"?</p>
+            <label><input type="radio" name="q2" value="a"> Ella fue aquí</label><br>
+            <label><input type="radio" name="q2" value="b"> Ella ha estado aquí</label><br>
+            <label><input type="radio" name="q2" value="c"> Ella está aquí</label><br><br>
+
+            <!-- Pregunta 3 -->
+            <p>3. ¿Cuál es el pasado de "go"?</p>
+            <label><input type="radio" name="q3" value="a"> Goed</label><br>
+            <label><input type="radio" name="q3" value="b"> Went</label><br>
+            <label><input type="radio" name="q3" value="c"> Go</label><br><br>
+
+            <!-- Pregunta 4 -->
+            <p>4. ¿Qué opción es gramaticalmente correcta?</p>
+            <label><input type="radio" name="q4" value="a"> I have seen him yesterday</label><br>
+            <label><input type="radio" name="q4" value="b"> I saw him yesterday</label><br>
+            <label><input type="radio" name="q4" value="c"> I have saw him yesterday</label><br><br>
+
+            <!-- Pregunta 5 -->
+            <p>5. ¿Cuál de estas es una "conditional sentence type 3"?</p>
+            <label><input type="radio" name="q5" value="a"> If I had known, I would have helped</label><br>
+            <label><input type="radio" name="q5" value="b"> If it rains, we stay inside</label><br>
+            <label><input type="radio" name="q5" value="c"> If I see her, I tell her</label><br><br>
+
+            <!-- Pregunta 6 -->
+            <p>6. ¿Qué opción tiene un "phrasal verb" con el significado correcto?</p>
+            <label><input type="radio" name="q6" value="a"> She looked up the stairs = Miró las escaleras</label><br>
+            <label><input type="radio" name="q6" value="b"> She looked up the word = Buscó la palabra</label><br>
+            <label><input type="radio" name="q6" value="c"> She looked up = Se sentó</label><br><br>
+
+            <!-- Pregunta 7 -->
+            <p>7. ¿Cuál oración es gramaticalmente correcta?</p>
+            <label><input type="radio" name="q7" value="a"> He don’t like pizza</label><br>
+            <label><input type="radio" name="q7" value="b"> He doesn’t likes pizza</label><br>
+            <label><input type="radio" name="q7" value="c"> He doesn’t like pizza</label><br><br>
+
+            <!-- Pregunta 8 -->
+            <p>8. ¿Cuál oración usa correctamente el estilo indirecto?</p>
+            <label><input type="radio" name="q8" value="a"> She said she is happy</label><br>
+            <label><input type="radio" name="q8" value="b"> She said she was happy</label><br>
+            <label><input type="radio" name="q8" value="c"> She says she was happy</label><br><br>
+
+            <!-- Pregunta 9 -->
+            <p>9. ¿Qué significa "He tends to exaggerate"?</p>
+            <label><input type="radio" name="q9" value="a"> Él exagera a veces</label><br>
+            <label><input type="radio" name="q9" value="b"> Él está obligado a exagerar</label><br>
+            <label><input type="radio" name="q9" value="c"> Él suele exagerar</label><br><br>
+
+            <!-- Pregunta 10 -->
+            <p>10. ¿Cuál es un sinónimo formal de "help"?</p>
+            <label><input type="radio" name="q10" value="a"> Assist</label><br>
+            <label><input type="radio" name="q10" value="b"> Make</label><br>
+            <label><input type="radio" name="q10" value="c"> Push</label><br><br>
+
+            <button type="submit">Ver mi nivel</button>
+        </form>
+        <div id="nivel-resultado" style="margin-top:20px; font-weight:bold;"></div>
+        <div id="inscribite-btn" style="display: none; margin-top: 15px;">
+            <a href="#contact" id="inscribite-link" class="boton-inscribite">Inscribite ahora 📥</a>
+        </div>
+
+        <div id="nivel-detalle" style="margin-top:15px;"></div>
+        <button id="reiniciar-test" style="display:none; margin-top: 15px;">Reiniciar test</button>
+
+
+    </section>
+
+
+    <section id="contact" class="scroll-section">
+        <h2>Contacto</h2>
+        <p>Envíanos un mensaje para más información.</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="form-toast" class="form-toast">Mensaje enviado con éxito ✅</div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Sobre Nosotros</h3>
+                <p>En <strong>C&E English</strong>, nos apasiona enseñar inglés de manera dinámica y efectiva. Aprende
+                    con nosotros y expande tus oportunidades. 🚀</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#about">Quiénes Somos</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="img/OIP (1).jpeg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/celearningprocess/" target="_blank">
+                        <img src="img/instagram-icon-logo-symbol-free-png.webp" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/5491170646247" target="_blank">
+                        <img src="img/whatsapp-icon-free-png.webp" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 C&E English | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <a href="https://wa.me/5491170646247?text=¡Hola!%20Estoy%20interesado%20en%20los%20cursos%20de%20inglés%20📚"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat en WhatsApp">
+        <img src="img/whatsapp-icon-free-png.webp" alt="WhatsApp Chat">
+    </a>
+
+</body>
+
+</html>
