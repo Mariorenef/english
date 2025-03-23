@@ -522,21 +522,28 @@ button:hover {
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-float img {
     width: 60px;
     height: 60px;
+    background-color: #25D366;
     border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+
 
 .faq-item {
     max-width: 600px;
@@ -589,7 +596,9 @@ button:hover {
 
 #reiniciar-test:hover {
     background-color: #555;
-}.boton-inscribite {
+}
+
+.boton-inscribite {
     background-color: #00b894;
     color: white;
     text-decoration: none;
@@ -598,10 +607,9 @@ button:hover {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s;
     display: inline-block;
-  }
-  
-  .boton-inscribite:hover {
+}
+
+.boton-inscribite:hover {
     background-color: #019875;
     transform: scale(1.05);
-  }
-  
+}
