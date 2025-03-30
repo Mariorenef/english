@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     /* Para que el título quede a la izquierda y el logo a la derecha */
     padding: 20px;
-    background-color: #d7d947;
+    background-color: #def847;
     color: rgb(28, 27, 20);
 }
 
@@ -240,16 +240,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .about-image img {
+}
+
+.about-image img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-  }
-  
+}
+
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -626,4 +626,29 @@ button:hover {
 .boton-inscribite:hover {
     background-color: #019875;
     transform: scale(1.05);
+}
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80px;
+    /* para evitar que se encoja al principio */
+    padding: 20px;
+}
+
+#typing-text {
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 90%;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #typing-text {
+        font-size: 1.5rem;
+        white-space: normal;
+    }
 }
