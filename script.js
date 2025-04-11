@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // EFECTO DE TYPING
     const typingElement = document.getElementById("typing-text");
-    const text = "Bienvenido a Nuestro Instituto de Inglés";
+    const text = "Bienvenidos a C&E English";
     let i = 0;
     function typingEffect() {
         if (typingElement && i < text.length) {
