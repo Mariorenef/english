@@ -295,7 +295,7 @@ if (nivelForm) {
             nivelResultado.textContent = `🚀 Ideal para empezar desde cero (A1). Aciertos: ${puntos}/10`;
             inscribiteLink.textContent = "Empezá desde cero 🚀";
         }
-        
+
     });
 }
 // Botones y contenedores del test
@@ -326,4 +326,8 @@ if (nivelForm) {
         reiniciarBtn.style.display = "inline-block";
         inscribiteDiv.style.display = "block";
     });
+}
+function toggleTest() {
+    const testContainer = document.getElementById('nivel-form-container');
+    testContainer.classList.toggle('hidden');
 }

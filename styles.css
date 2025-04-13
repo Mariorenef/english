@@ -212,7 +212,7 @@ section {
 
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
@@ -220,13 +220,20 @@ section {
 
 
 .about-text {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    padding: 20px;
     min-width: 300px;
     max-width: 600px;
-    text-align: left;
-    padding: 20px;
     font-size: 18px;
     line-height: 1.6;
+}
+
+.about-text {
+    margin-top: -20px;
+    /* o ajustá según lo que necesites */
 }
 
 .about-text p {
@@ -651,4 +658,25 @@ button:hover {
         font-size: 1.5rem;
         white-space: normal;
     }
+}
+
+.toggle-test-btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-test-btn:hover {
+    background-color: #0077cc;
+}
+
+.hidden {
+    display: none;
 }

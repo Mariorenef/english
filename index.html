@@ -28,6 +28,7 @@
             </div>
         </div>
 
+
         <button class="menu-toggle">☰</button>
         <nav class="nav-menu">
             <ul>
@@ -58,8 +59,7 @@
                     🚀📚✨</p>
             </div>
             <div class="about-image">
-                <img src="img/diseno-ilustracion-escuela-ingles-dibujado-mano_23-2149537612.avif"
-                    alt="Estudiantes en clase">
+                <img src="img/fundadoras.jpg.png" alt="Estudiantes en clase">
             </div>
         </div>
     </section>
@@ -153,80 +153,76 @@
     </section>
 
     <section id="nivel" class="scroll-section">
-        <h2>¿Qué nivel de inglés tenés?</h2>
-        <form id="nivel-form">
-            <!-- Pregunta 1 -->
-            <p>1. ¿Cómo dirías "Yo estoy estudiando inglés"?</p>
-            <label><input type="radio" name="q1" value="a"> I study English</label><br>
-            <label><input type="radio" name="q1" value="b"> I am studying English</label><br>
-            <label><input type="radio" name="q1" value="c"> I am study English</label><br><br>
+        <button class="toggle-test-btn" onclick="toggleTest()">📘 ¿Qué nivel de inglés tenés?</button>
 
-            <!-- Pregunta 2 -->
-            <p>2. ¿Qué significa "She has been here"?</p>
-            <label><input type="radio" name="q2" value="a"> Ella fue aquí</label><br>
-            <label><input type="radio" name="q2" value="b"> Ella ha estado aquí</label><br>
-            <label><input type="radio" name="q2" value="c"> Ella está aquí</label><br><br>
+        <div id="nivel-form-container" class="hidden">
+            <form id="nivel-form">
+                <h2>Test de nivel de inglés</h2>
 
-            <!-- Pregunta 3 -->
-            <p>3. ¿Cuál es el pasado de "go"?</p>
-            <label><input type="radio" name="q3" value="a"> Goed</label><br>
-            <label><input type="radio" name="q3" value="b"> Went</label><br>
-            <label><input type="radio" name="q3" value="c"> Go</label><br><br>
+                <p>1. ¿Cómo dirías "Yo estoy estudiando inglés"?</p>
+                <label><input type="radio" name="q1" value="a"> I study English</label><br>
+                <label><input type="radio" name="q1" value="b"> I am studying English</label><br>
+                <label><input type="radio" name="q1" value="c"> I am study English</label><br><br>
 
-            <!-- Pregunta 4 -->
-            <p>4. ¿Qué opción es gramaticalmente correcta?</p>
-            <label><input type="radio" name="q4" value="a"> I have seen him yesterday</label><br>
-            <label><input type="radio" name="q4" value="b"> I saw him yesterday</label><br>
-            <label><input type="radio" name="q4" value="c"> I have saw him yesterday</label><br><br>
+                <p>2. ¿Qué significa "She has been here"?</p>
+                <label><input type="radio" name="q2" value="a"> Ella fue aquí</label><br>
+                <label><input type="radio" name="q2" value="b"> Ella ha estado aquí</label><br>
+                <label><input type="radio" name="q2" value="c"> Ella está aquí</label><br><br>
 
-            <!-- Pregunta 5 -->
-            <p>5. ¿Cuál de estas es una "conditional sentence type 3"?</p>
-            <label><input type="radio" name="q5" value="a"> If I had known, I would have helped</label><br>
-            <label><input type="radio" name="q5" value="b"> If it rains, we stay inside</label><br>
-            <label><input type="radio" name="q5" value="c"> If I see her, I tell her</label><br><br>
+                <p>3. ¿Cuál es el pasado de "go"?</p>
+                <label><input type="radio" name="q3" value="a"> Goed</label><br>
+                <label><input type="radio" name="q3" value="b"> Went</label><br>
+                <label><input type="radio" name="q3" value="c"> Go</label><br><br>
 
-            <!-- Pregunta 6 -->
-            <p>6. ¿Qué opción tiene un "phrasal verb" con el significado correcto?</p>
-            <label><input type="radio" name="q6" value="a"> She looked up the stairs = Miró las escaleras</label><br>
-            <label><input type="radio" name="q6" value="b"> She looked up the word = Buscó la palabra</label><br>
-            <label><input type="radio" name="q6" value="c"> She looked up = Se sentó</label><br><br>
+                <p>4. ¿Qué opción es gramaticalmente correcta?</p>
+                <label><input type="radio" name="q4" value="a"> I have seen him yesterday</label><br>
+                <label><input type="radio" name="q4" value="b"> I saw him yesterday</label><br>
+                <label><input type="radio" name="q4" value="c"> I have saw him yesterday</label><br><br>
 
-            <!-- Pregunta 7 -->
-            <p>7. ¿Cuál oración es gramaticalmente correcta?</p>
-            <label><input type="radio" name="q7" value="a"> He don’t like pizza</label><br>
-            <label><input type="radio" name="q7" value="b"> He doesn’t likes pizza</label><br>
-            <label><input type="radio" name="q7" value="c"> He doesn’t like pizza</label><br><br>
+                <p>5. ¿Cuál de estas es una "conditional sentence type 3"?</p>
+                <label><input type="radio" name="q5" value="a"> If I had known, I would have helped</label><br>
+                <label><input type="radio" name="q5" value="b"> If it rains, we stay inside</label><br>
+                <label><input type="radio" name="q5" value="c"> If I see her, I tell her</label><br><br>
 
-            <!-- Pregunta 8 -->
-            <p>8. ¿Cuál oración usa correctamente el estilo indirecto?</p>
-            <label><input type="radio" name="q8" value="a"> She said she is happy</label><br>
-            <label><input type="radio" name="q8" value="b"> She said she was happy</label><br>
-            <label><input type="radio" name="q8" value="c"> She says she was happy</label><br><br>
+                <p>6. ¿Qué opción tiene un "phrasal verb" con el significado correcto?</p>
+                <label><input type="radio" name="q6" value="a"> She looked up the stairs = Miró las
+                    escaleras</label><br>
+                <label><input type="radio" name="q6" value="b"> She looked up the word = Buscó la palabra</label><br>
+                <label><input type="radio" name="q6" value="c"> She looked up = Se sentó</label><br><br>
 
-            <!-- Pregunta 9 -->
-            <p>9. ¿Qué significa "He tends to exaggerate"?</p>
-            <label><input type="radio" name="q9" value="a"> Él exagera a veces</label><br>
-            <label><input type="radio" name="q9" value="b"> Él está obligado a exagerar</label><br>
-            <label><input type="radio" name="q9" value="c"> Él suele exagerar</label><br><br>
+                <p>7. ¿Cuál oración es gramaticalmente correcta?</p>
+                <label><input type="radio" name="q7" value="a"> He don’t like pizza</label><br>
+                <label><input type="radio" name="q7" value="b"> He doesn’t likes pizza</label><br>
+                <label><input type="radio" name="q7" value="c"> He doesn’t like pizza</label><br><br>
 
-            <!-- Pregunta 10 -->
-            <p>10. ¿Cuál es un sinónimo formal de "help"?</p>
-            <label><input type="radio" name="q10" value="a"> Assist</label><br>
-            <label><input type="radio" name="q10" value="b"> Make</label><br>
-            <label><input type="radio" name="q10" value="c"> Push</label><br><br>
+                <p>8. ¿Cuál oración usa correctamente el estilo indirecto?</p>
+                <label><input type="radio" name="q8" value="a"> She said she is happy</label><br>
+                <label><input type="radio" name="q8" value="b"> She said she was happy</label><br>
+                <label><input type="radio" name="q8" value="c"> She says she was happy</label><br><br>
 
-            <button type="submit">Ver mi nivel</button>
-        </form>
-        <div id="nivel-resultado" style="margin-top:20px; font-weight:bold;"></div>
-        <div id="inscribite-btn" style="display: none; margin-top: 15px;">
-            <a href="#contact" id="inscribite-link" class="boton-inscribite">Inscribite ahora 📥</a>
+                <p>9. ¿Qué significa "He tends to exaggerate"?</p>
+                <label><input type="radio" name="q9" value="a"> Él exagera a veces</label><br>
+                <label><input type="radio" name="q9" value="b"> Él está obligado a exagerar</label><br>
+                <label><input type="radio" name="q9" value="c"> Él suele exagerar</label><br><br>
+
+                <p>10. ¿Cuál es un sinónimo formal de "help"?</p>
+                <label><input type="radio" name="q10" value="a"> Assist</label><br>
+                <label><input type="radio" name="q10" value="b"> Make</label><br>
+                <label><input type="radio" name="q10" value="c"> Push</label><br><br>
+
+                <button type="submit">Ver mi nivel</button>
+            </form>
+
+            <div id="nivel-resultado" style="margin-top:20px; font-weight:bold;"></div>
+            <div id="inscribite-btn" style="display: none; margin-top: 15px;">
+                <a href="#contact" id="inscribite-link" class="boton-inscribite">Inscribite ahora 📥</a>
+            </div>
+
+            <div id="nivel-detalle" style="margin-top:15px;"></div>
+            <button id="reiniciar-test" style="display:none; margin-top: 15px;">Reiniciar test</button>
         </div>
-
-        <div id="nivel-detalle" style="margin-top:15px;"></div>
-        <button id="reiniciar-test" style="display:none; margin-top: 15px;">Reiniciar test</button>
-
-
     </section>
+
 
 
     <section id="contact" class="scroll-section">
