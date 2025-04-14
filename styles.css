@@ -680,7 +680,28 @@ button:hover {
 .hidden {
     display: none;
 }
-#nivel-form h2, 
+
+#nivel-form h2,
 #nivel-form h3 {
     text-align: center;
+}
+
+#nivel-form {
+    background: #3fd13f;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #nivel-form {
+        margin: 0 10px;
+        /* Le da espacio a los lados */
+    }
+
+    #nivel-form p {
+        font-size: 16px;
+    }
 }
