@@ -589,7 +589,7 @@ button:hover {
 }
 
 #nivel-form {
-    max-width: 450px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: left;
     background: #3fc118;
@@ -679,4 +679,8 @@ button:hover {
 
 .hidden {
     display: none;
+}
+#nivel-form h2, 
+#nivel-form h3 {
+    text-align: center;
 }
