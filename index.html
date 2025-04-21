@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="📚 Instituto C&E English: clases de inglés para niños, adolescentes y adultos." />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="img/perro.png.png" type="image/png" />
     <title>C&E English | Cursos de Inglés</title>
 
@@ -13,8 +14,14 @@
 
     <link rel="stylesheet" href="styles.css" />
 </head>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <body>
+    <div id="scroll-bar"></div>
+
     <header>
         <div class="header-container">
             <div class="header-title">
@@ -41,6 +48,8 @@
     </header>
 
     <section id="about" class="scroll-section">
+        <section data-aos="fade-up">Contenido lindo</section>
+
         <h2>Quiénes Somos</h2>
         <div class="about-container">
             <div class="about-text">
@@ -65,6 +74,8 @@
     </section>
 
     <section id="courses" class="scroll-section">
+        <section data-aos="fade-up">Contenido lindo</section>
+
         <h2>Nuestros Cursos</h2>
         <div class="cursos-container">
             <div class="curso-card">
@@ -112,6 +123,8 @@
         </div>
     </div>
     <section id="testimonios" class="scroll-section">
+        <section data-aos="fade-up">Contenido lindo</section>
+
         <h2>Testimonios</h2>
         <div class="carousel">
             <div class="testimonial active">
@@ -137,6 +150,8 @@
         </div>
     </section>
     <section id="faq" class="scroll-section">
+        <section data-aos="fade-up">Contenido lindo</section>
+
         <h2>Preguntas Frecuentes</h2>
         <div class="faq-item">
             <h4 class="faq-question">¿Necesito conocimientos previos?</h4>
@@ -153,6 +168,8 @@
     </section>
 
     <section id="nivel" class="scroll-section">
+        <section data-aos="fade-up">Contenido lindo</section>
+
         <button class="toggle-test-btn" onclick="toggleTest()">📘 ¿Qué nivel de inglés tenés?</button>
 
         <div id="nivel-form-container" class="hidden">
@@ -226,6 +243,8 @@
 
 
     <section id="contact" class="scroll-section">
+        <section data-aos="fade-up">Contenido lindo</section>
+
         <h2>Contacto</h2>
         <p>Envíanos un mensaje para más información.</p>
         <form action="https://formspree.io/f/xqapdbpp" method="POST">
@@ -278,6 +297,15 @@
 
 
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollBar = document.getElementById('scroll-bar');
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = (window.scrollY / scrollTotal) * 100;
+            scrollBar.style.width = `${scrollProgress}%`;
+        });
+    </script>
+
 </body>
 
 </html>
